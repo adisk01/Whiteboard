@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="tools-container">
+        <div class="tools-content">
+            <div class="tool" id="eraser">
+                <img src="./NewIcons/Eraser.svg" alt="" />
+              </div>
+            <div class="tool" id="black pencil">
+                <img src="./NewIcons/Black_Pencil.svg" alt="" />
+              </div>
+            <div class="tool" id="undo">
+                <img src="./NewIcons/undo.svg" alt="" />
+              </div>
+              <div class="tool" id="redo">
+                <img src="./NewIcons/Redo.svg" alt="" />
+              </div>
+              <div class="tool" id="sticky">
+                <img src="./NewIcons/StickyNote.svg" alt="" />
+              </div>
+              <div class="tool" id="photo">
+                <img src="./NewIcons/Photo.svg" alt="" />
+                <input type="file" name="" id="photo-upload">
+                
+              </div>
+              <div class="tool" id="download">
+                <img src="./NewIcons/Download.svg" alt="" />
+              </div>
+        </div>
+    </div>
+    <div class="drawing-container">
+    <canvas id="canvas"></canvas></div>
+   
+    
+    <script src="./script.js"></script>
+    <script src="tools.js"></script>
+    <script src="sticky.js"></script>
+    <script src="./img.js"></script>
+</body>
+</html>
