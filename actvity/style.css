@@ -2,22 +2,12 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    overflow:hidden;
 }
 
-.tools-container{
-
-height: 100px;
-
-background-color: lightgrey;
+body{
+    overflow: hidden;
 }
-.drawing-container{
 
-}
-#canvas{
-    
-background-color:white;
-}
 .tools-container {
     height: 100px;
     /* background: aquamarine; */
@@ -36,6 +26,7 @@ background-color:white;
     background: aliceblue;
     border-radius: 10px;
 }
+
 .tool {
     height: 55%;
     width: 10%;
@@ -45,8 +36,15 @@ background-color:white;
 .tool img {
     height: 100%;
     width: 100%;
-   
 }
+
+.drawing-container {
+}
+
+#canvas {
+    /* background-color: aqua; */
+}
+
 .sticky {
     position: absolute;
     top: 200px;
@@ -71,20 +69,14 @@ background-color:white;
     border-radius: 50px;
 }
 
-.minimize i{
-    font-size: 20px;
-    color: black;
-    
+.minimize {
+    background: lightskyblue;
 }
 
-.close i {
-    font-size: 20px;
-    color:red
+.close {
+    background: lightcoral;
 }
-.close i:hover{
-    transform: 0.5;
-    transition: 1s;
-}
+
 .sticky-content {
     height: 87%;
     /* border: 1px solid; */
@@ -92,8 +84,8 @@ background-color:white;
     background: lightsteelblue;
     outline: none;
     padding: 10px;
-    overflow: auto;
 }
+
 .sticky-image-div {
     height: 87%;
 }
@@ -102,4 +94,74 @@ background-color:white;
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.active-tool {
+    /* transform: scale(1.2); */
+}
+
+.fade {
+    opacity: 0.5;
+}
+
+.tool-options {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    /* background: aquamarine; */
+    top: 60px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2px;
+    background: aliceblue;
+}
+
+.hide {
+    display: none;
+}
+
+.pen-size {
+}
+
+.pen-size input {
+    width: 100%;
+}
+
+.eraser-size input{
+    width: 100%;
+}
+
+
+.pen-colors {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.pen-colors div {
+    height: 15px;
+    width: 14px;
+    border-radius: 50px;
+}
+
+.black {
+    background: black;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.red {
+    background: red;
 }
